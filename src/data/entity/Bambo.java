@@ -4,6 +4,7 @@ import java.util.List;
 
 import data.coordinates.Vector2f;
 import data.gun.Gun;
+import data.gun.UZI;
 import data.map.TileMap;
 import data.notification.Notification;
 import main.BoxHeadSketch;
@@ -15,7 +16,7 @@ public class Bambo extends GameEntity {
 
 	public Bambo(PApplet p, Vector2f position) {
 		super(EntityType.FRIENDLY, p, new Vector2f(50, 50), 20, 50, 52, 61, 2, 100);
-		gun = new Gun(50, 20, 5, 400, 0, false, true);
+		gun = new UZI(50, 20, 5, 400, 0, false, true);
 		gun.setDirX(1);
 		gun.setDirY(0);
 	}

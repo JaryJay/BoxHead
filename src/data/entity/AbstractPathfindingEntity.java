@@ -30,7 +30,7 @@ public abstract class AbstractPathfindingEntity extends GameEntity {
 		Tile start = t.getTiles()[(int) (position.y / Tile.TILE_SIZE)][(int) (position.x / Tile.TILE_SIZE)];
 		Tile goal = findGoal(t, cameFrom);
 		Tile current = goal;
-		System.out.println(goal);
+//		System.out.println(goal);
 		while (cameFrom.get(current) != start && current != start) {
 			current = cameFrom.get(current);
 		}

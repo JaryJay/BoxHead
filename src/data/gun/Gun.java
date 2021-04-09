@@ -146,14 +146,18 @@ public class Gun {
 		p.popMatrix();
 	}
 
-	public void display(Vector2f position, float radius, PApplet p) {
+	public final void display(Vector2f position, float radius, PApplet p) {
 		p.pushMatrix();
 		p.translate(position.x, position.y);
 		p.rotate((float) Math.atan2(dirY, dirX));
+		displayGun(position, radius, p);
+		p.popMatrix();
+	}
+
+	public void displayGun(Vector2f position, float radius, PApplet p) {
 		p.fill(50, 55, 56);
 		p.stroke(0);
 		p.rect(radius * GameEntity.SQRT_TWO_OVER_TWO - 10, radius * GameEntity.SQRT_TWO_OVER_TWO, 20, 5);
-		p.popMatrix();
 	}
 
 	public int getCooldown() {
