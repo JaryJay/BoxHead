@@ -198,9 +198,9 @@ public class BoxHeadSketch extends PApplet {
 		if (key == ' ') {
 			notificationGui.addNotification(new Notification("Pressed Space!", 50, 50, 50));
 		}
-		if (keyCode == KeyEvent.VK_SHIFT) {
-			notificationGui.addNotification(new Notification("WOAAHHHH!!!", 255, 0, 0));
-		}
+//		if (keyCode == KeyEvent.VK_SHIFT) {
+//			notificationGui.addNotification(new Notification("WOAAHHHH!!!", 255, 0, 0));
+//		}
 		if (keyCode == KeyEvent.VK_CONTROL) {
 			bambo.setCurrentHealth(bambo.getCurrentHealth() - 1);
 		}
